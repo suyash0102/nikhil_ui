@@ -67,7 +67,9 @@ class _NewPageState extends State<NewPage> {
               xValueMapper: (ChartData data, _) => data.x,
               yValueMapper: (ChartData data, _) => data.y),
         ]);
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery
+        .of(context)
+        .size;
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: size.height * 0.08,
@@ -84,12 +86,12 @@ class _NewPageState extends State<NewPage> {
             ),
             Center(
                 child: Text(
-              "DASHBOARD",
-              style: TextStyle(
-                  color: kPrimaryColor,
-                  fontWeight: FontWeight.w700,
-                  fontSize: size.width * 0.07),
-            )),
+                  "DASHBOARD",
+                  style: TextStyle(
+                      color: kPrimaryColor,
+                      fontWeight: FontWeight.w700,
+                      fontSize: size.width * 0.07),
+                )),
             SizedBox(
               height: size.height * 0.03,
             ),
@@ -203,10 +205,10 @@ class _NewPageState extends State<NewPage> {
                                 fontSize: 20, fontWeight: FontWeight.w700),
                           ),
                         ),
-                        SizedBox(height: size.height*0.005,),
+                        SizedBox(height: size.height * 0.005,),
                         Container(
                             height: size.height * 0.2,
-                            width: size.width*0.4,
+                            width: size.width * 0.4,
                             child: chart),
                       ],
                     ),
@@ -234,10 +236,10 @@ class _NewPageState extends State<NewPage> {
                                 fontSize: 20, fontWeight: FontWeight.w700),
                           ),
                         ),
-                        SizedBox(height: size.height*0.005,),
+                        SizedBox(height: size.height * 0.005,),
                         Container(
                             height: size.height * 0.2,
-                            width: size.width*0.4,
+                            width: size.width * 0.4,
                             child: chart2),
                       ],
                     ),
@@ -253,29 +255,29 @@ class _NewPageState extends State<NewPage> {
               children: [
                 Center(
                     child: Text(
-                  "Total Water used: ",
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontWeight: FontWeight.w700,
-                      fontSize: size.width * 0.06),
-                )),
+                      "Total Water used: ",
+                      style: TextStyle(
+                          color: kPrimaryColor,
+                          fontWeight: FontWeight.w700,
+                          fontSize: size.width * 0.06),
+                    )),
                 Center(
                     child: Text(
-                  "$totalWater",
-                  style: TextStyle(
-                      decoration: TextDecoration.underline,
-                      color: Colors.redAccent,
-                      fontWeight: FontWeight.w700,
-                      fontSize: size.width * 0.06),
-                )),
+                      "$totalWater",
+                      style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Colors.redAccent,
+                          fontWeight: FontWeight.w700,
+                          fontSize: size.width * 0.06),
+                    )),
                 Center(
                     child: Text(
-                  " L ",
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontWeight: FontWeight.w700,
-                      fontSize: size.width * 0.06),
-                )),
+                      " L ",
+                      style: TextStyle(
+                          color: kPrimaryColor,
+                          fontWeight: FontWeight.w700,
+                          fontSize: size.width * 0.06),
+                    )),
               ],
             ),
             SizedBox(
@@ -305,14 +307,14 @@ class _NewPageState extends State<NewPage> {
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
-                        SizedBox(height: size.height*0.01,),
+                        SizedBox(height: size.height * 0.01,),
                         Padding(
                           padding: EdgeInsets.only(top: size.height * 0.015),
                           child: Text(
                             '0',
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              color: Colors.redAccent,
+                                color: Colors.redAccent,
                                 fontSize: size.width * 0.03,
                                 fontWeight: FontWeight.w700),
                           ),
@@ -342,7 +344,7 @@ class _NewPageState extends State<NewPage> {
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
-                        SizedBox(height: size.height*0.01,),
+                        SizedBox(height: size.height * 0.01,),
                         Padding(
                           padding: EdgeInsets.only(top: size.height * 0.015),
                           child: Text(
@@ -379,7 +381,7 @@ class _NewPageState extends State<NewPage> {
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
-                        SizedBox(height: size.height*0.01,),
+                        SizedBox(height: size.height * 0.01,),
                         Padding(
                           padding: EdgeInsets.only(top: size.height * 0.015),
                           child: Text(
@@ -416,7 +418,7 @@ class _NewPageState extends State<NewPage> {
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
-                        SizedBox(height: size.height*0.01,),
+                        SizedBox(height: size.height * 0.01,),
                         Padding(
                           padding: EdgeInsets.only(top: size.height * 0.015),
                           child: Text(

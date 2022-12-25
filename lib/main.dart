@@ -6,7 +6,8 @@ void main() {
   runApp(const MyApp());
 }
 
-Color kPrimaryColor= Color.fromRGBO(49, 87, 110, 1.0);
+Color kPrimaryColor = Color.fromRGBO(49, 87, 110, 1.0);
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -63,7 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
     'Rice',
   ];
 
-  Widget buildTextField3() => TextFormField(
+  Widget buildTextField3() =>
+      TextFormField(
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.transparent),
@@ -81,7 +83,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       );
 
-  Widget buildTextField2() => TextFormField(
+  Widget buildTextField2() =>
+      TextFormField(
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.transparent),
@@ -101,7 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery
+        .of(context)
+        .size;
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -167,25 +172,26 @@ class _MyHomePageState extends State<MyHomePage> {
             //   },
             // ),
             Padding(
-              padding:  EdgeInsets.all(size.width*0.01),
+              padding: EdgeInsets.all(size.width * 0.01),
               child: Container(
-                height: size.height*0.13,
-                width: size.width*0.8,
+                height: size.height * 0.13,
+                width: size.width * 0.8,
                 decoration: BoxDecoration(
                   color: Colors.blue[200],
                   borderRadius: BorderRadius.circular(7),
-              ),
+                ),
                 child: Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top:size.height*0.015),
+                      padding: EdgeInsets.only(top: size.height * 0.015),
                       child: Text(
                         'Start Time',
-                        style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700),
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w700),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(size.width*0.02),
+                      padding: EdgeInsets.all(size.width * 0.02),
                       child: DateTimePicker(
                         type: DateTimePickerType.dateTimeSeparate,
                         dateMask: 'd MMM, yyyy',
@@ -215,12 +221,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            SizedBox(height: size.height*0.02,),
+            SizedBox(height: size.height * 0.02,),
             Padding(
-              padding:  EdgeInsets.all(size.width*0.01),
+              padding: EdgeInsets.all(size.width * 0.01),
               child: Container(
-                height: size.height*0.13,
-                width: size.width*0.8,
+                height: size.height * 0.13,
+                width: size.width * 0.8,
                 decoration: BoxDecoration(
                   color: Colors.blue[200],
                   borderRadius: BorderRadius.circular(7),
@@ -228,14 +234,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top:size.height*0.015),
+                      padding: EdgeInsets.only(top: size.height * 0.015),
                       child: Text(
                         'End Time',
-                        style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700),
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w700),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(size.width*0.02),
+                      padding: EdgeInsets.all(size.width * 0.02),
                       child: DateTimePicker(
                         type: DateTimePickerType.dateTimeSeparate,
                         dateMask: 'd MMM, yyyy',
@@ -271,7 +278,7 @@ class _MyHomePageState extends State<MyHomePage> {
             //   style: TextStyle(fontSize: 20),
             // ),
             SizedBox(
-              height: size.height*0.07,
+              height: size.height * 0.07,
             ),
             // buildTextField3(),
             // SizedBox(
